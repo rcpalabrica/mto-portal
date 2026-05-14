@@ -4,7 +4,7 @@ import AppCard from './AppCard'
 const APPS = [
   {
     name: 'DINGLE MUNICIPAL CEMETERY',
-    description: 'Niches and Boneboxes Rentals',
+    description: 'Niches and Bone Boxes Rentals',
     icon: Building2,
     iconBgClass: 'bg-sky-100',
     iconColorClass: 'text-sky-600',
