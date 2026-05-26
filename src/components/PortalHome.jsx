@@ -17,8 +17,8 @@ const APPS = [
     icon: Store,
     iconBgClass: 'bg-emerald-100',
     iconColorClass: 'text-emerald-600',
-    url: null,
-    status: 'coming-soon',
+    url: 'https://stalls-mto.vercel.app/',
+    status: 'live',
   },
   {
     name: 'COLLECTION SYSTEM',
