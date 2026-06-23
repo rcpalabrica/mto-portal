@@ -1,4 +1,4 @@
-import { Building2, Store, Receipt, Wallet } from 'lucide-react'
+import { Building2, Store, Receipt, Wallet, PenLine } from 'lucide-react'
 import AppCard from './AppCard'
 
 const APPS = [
@@ -37,6 +37,15 @@ const APPS = [
     iconColorClass: 'text-violet-600',
     url: 'https://pcf-tan.vercel.app/',
     status: 'live',
+  },
+  {
+    name: 'CHECK WRITER',
+    description: 'Check Printing and Logging',
+    icon: PenLine,
+    iconBgClass: 'bg-rose-100',
+    iconColorClass: 'text-rose-600',
+    url: null,
+    status: 'coming-soon',
   },
 ]
 
