@@ -1,4 +1,4 @@
-import { Building2, Store, Receipt } from 'lucide-react'
+import { Building2, Store, Receipt, Wallet } from 'lucide-react'
 import AppCard from './AppCard'
 
 const APPS = [
@@ -29,6 +29,15 @@ const APPS = [
     url: null,
     status: 'coming-soon',
   },
+  {
+    name: 'PETTY CASH FUND',
+    description: 'PCF Monitoring',
+    icon: Wallet,
+    iconBgClass: 'bg-violet-100',
+    iconColorClass: 'text-violet-600',
+    url: 'https://pcf-tan.vercel.app/',
+    status: 'live',
+  },
 ]
 
 export default function PortalHome() {
@@ -55,9 +64,11 @@ export default function PortalHome() {
           <p className="text-sm text-slate-500 mt-2">Select an application to get started.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {APPS.map((app) => (
-            <AppCard key={app.name} {...app} />
+            <div key={app.name} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+              <AppCard {...app} />
+            </div>
           ))}
         </div>
       </main>
